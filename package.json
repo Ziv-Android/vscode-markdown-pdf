@@ -1,8 +1,8 @@
 {
-  "name": "markdown-pdf-ziv",
+  "name": "markdown-pdf",
   "displayName": "Markdown PDF(z)",
   "description": "Convert Markdown to PDF",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "publisher": "ziv",
   "icon": "images/icon.png",
   "engines": {
@@ -504,7 +504,7 @@
     "markdown-it-plantuml": "^1.4.1",
     "mkdirp": "^1.0.4",
     "mustache": "^4.2.0",
-    "puppeteer-core": "^14.1.1",
+    "puppeteer": "^14.1.1",
     "rimraf": "^3.0.2"
   }
 }

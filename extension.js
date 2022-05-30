@@ -371,7 +371,7 @@ function exportPdf(data, filename, type, uri) {
   }
   if (!checkPuppeteerBinary()) {
     showErrorMessage('Chromium or Chrome does not exist! \
-      See https://github.com/yzane/vscode-markdown-pdf#install');
+      See https://github.com/Ziv-Android/vscode-markdown-pdf#install');
     return;
   }
 
@@ -391,7 +391,7 @@ function exportPdf(data, filename, type, uri) {
           return;
         }
 
-        const puppeteer = require('puppeteer-core');
+        const puppeteer = require('puppeteer');
         // create temporary file
         var f = path.parse(filename);
         var tmpfilename = path.join(f.dir, f.name + '_tmp.html');
@@ -775,7 +775,7 @@ function checkPuppeteerBinary() {
     }
 
     // bundled Chromium
-    const puppeteer = require('puppeteer-core');
+    const puppeteer = require('puppeteer');
     executablePath = puppeteer.executablePath();
     if (isExistsPath(executablePath)) {
       return true;
@@ -800,9 +800,9 @@ function installChromium() {
     setProxy();
 
     var StatusbarMessageTimeout = vscode.workspace.getConfiguration('markdown-pdf')['StatusbarMessageTimeout'];
-    const puppeteer = require('puppeteer-core');
+    const puppeteer = require('puppeteer');
     const browserFetcher = puppeteer.createBrowserFetcher();
-    const revision = require(path.join(__dirname, 'node_modules', 'puppeteer-core', 'package.json')).puppeteer.chromium_revision;
+    const revision = require(path.join(__dirname, 'node_modules', 'puppeteer', 'package.json')).puppeteer.chromium_revision;
     const revisionInfo = browserFetcher.revisionInfo(revision);
 
     // download Chromium
@@ -831,7 +831,7 @@ function installChromium() {
       vscode.window.setStatusBarMessage('$(markdown) ERROR: Failed to download Chromium!', StatusbarMessageTimeout);
       showErrorMessage('Failed to download Chromium! \
         If you are behind a proxy, set the http.proxy option to settings.json and restart Visual Studio Code. \
-        See https://github.com/yzane/vscode-markdown-pdf#install', error);
+        See https://github.com/Ziv-Android/vscode-markdown-pdf#install', error);
     }
 
     function onProgress(downloadedBytes, totalBytes) {
