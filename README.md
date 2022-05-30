@@ -2,8 +2,6 @@
 
 This extension converts Markdown files to pdf, html, png or jpeg files.
 
-[Japanese README](README.ja.md)
-
 ## Table of Contents
 <!-- TOC depthFrom:2 depthTo:2 updateOnSave:false -->
 
@@ -581,6 +579,8 @@ Please use the following to insert a page break.
 
 
 ## [Release Notes](CHANGELOG.md)
+### 2.0.2 (2022/05/30)
+* fix: pxportPdf() TimeOut 30000
 
 ### 1.4.4 (2020/03/19)
 * Change: mermaid javascript reads from URL instead of from local file
