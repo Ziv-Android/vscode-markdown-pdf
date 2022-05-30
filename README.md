@@ -580,7 +580,7 @@ Please use the following to insert a page break.
 
 ## [Release Notes](CHANGELOG.md)
 ### 2.0.2 (2022/05/30)
-* fix: pxportPdf() TimeOut 30000
+* fix: exportPdf() TimeOut 30000 Error
 
 ### 1.4.4 (2020/03/19)
 * Change: mermaid javascript reads from URL instead of from local file
